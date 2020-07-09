@@ -4,6 +4,7 @@ import Foundation
 import WebKit
 
 public extension WKWebView {
+    // call from webView(_ webView: WKWebView, didFinish navigation: WKNavigation!)
     func waitTillPageReady(_ completion: @escaping (Result<Void, Swift.Error>) -> ()) {
         enum Error: Swift.Error { case fatalError }
         self.evaluateJavaScript("document.readyState") { (complete, error) in
