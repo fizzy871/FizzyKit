@@ -1,4 +1,5 @@
 
+#if os(iOS)
 import UIKit
 
 public protocol KeyboardObserverDelegate: class {
@@ -110,3 +111,4 @@ public extension KeyboardObserver {
         case failedToParseUserInfo
     }
 }
+#endif

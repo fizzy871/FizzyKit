@@ -1,6 +1,7 @@
 
 import UIKit
 
+#if os(iOS)
 @available(iOS 10.0, *)
 public class KeyboardDependConstraintsManager: NSObject {
     //MARK: Outlets
@@ -51,3 +52,4 @@ extension KeyboardDependConstraintsManager: KeyboardObserverDelegate {
         }
     }
 }
+#endif
