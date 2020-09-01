@@ -1,6 +1,6 @@
 
 import Foundation
 
-protocol TitledError {
+public protocol TitledError {
     var title: String { get }
 }
