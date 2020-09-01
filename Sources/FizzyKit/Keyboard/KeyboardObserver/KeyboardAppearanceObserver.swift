@@ -1,5 +1,4 @@
 
-#if os(iOS)
 import Foundation
 import CoreGraphics
 
@@ -40,4 +39,3 @@ extension KeyboardAppearanceObserver: KeyboardObserverDelegate {
         
     }
 }
-#endif

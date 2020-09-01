@@ -1,6 +1,4 @@
 
-
-#if os(iOS)
 import Foundation
 import UIKit
 
@@ -84,4 +82,3 @@ public extension UIColor {
         return (hue, saturation, brightness, alpha)
     }
 }
-#endif

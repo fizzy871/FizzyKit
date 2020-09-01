@@ -1,7 +1,6 @@
 
 import UIKit
 
-#if os(iOS)
 public class KeyboardDependViewController: UIViewController {
     
     @IBOutlet public weak var containerViewBottomConstraint: NSLayoutConstraint?
@@ -46,4 +45,3 @@ public class KeyboardDependViewController: UIViewController {
     }
     
 }
-#endif

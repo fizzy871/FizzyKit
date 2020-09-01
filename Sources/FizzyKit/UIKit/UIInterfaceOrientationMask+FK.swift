@@ -1,5 +1,4 @@
 
-#if os(iOS)
 import UIKit
 
 public extension UIInterfaceOrientationMask {
@@ -46,4 +45,3 @@ public extension UIInterfaceOrientationMask {
         }
     }
 }
-#endif

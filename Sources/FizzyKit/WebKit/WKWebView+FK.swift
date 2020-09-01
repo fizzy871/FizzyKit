@@ -1,6 +1,5 @@
 // File.swift
 
-#if os(iOS)
 import Foundation
 import WebKit
 
@@ -23,4 +22,3 @@ public extension WKWebView {
         }
     }
 }
-#endif
