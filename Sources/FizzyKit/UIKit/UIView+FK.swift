@@ -2,6 +2,7 @@
 import UIKit
 
 // autolayout helpers
+@available(iOS 9.0, *)
 public extension UIView {
     func removeAllConstraints(recursively: Bool = false) {
         self.removeConstraints(self.constraints)
@@ -26,6 +27,7 @@ public extension UIView {
 }
 
 // other
+@available(iOS 9.0, *)
 public extension UIView {
     func setEmbededView(view: UIView, removeAllSubviews: Bool = true) {
         if removeAllSubviews {
@@ -37,6 +39,7 @@ public extension UIView {
 }
 
 // in stack view
+@available(iOS 9.0, *)
 public extension UIView {
     var isHiddenInStackView: Bool {
         set {

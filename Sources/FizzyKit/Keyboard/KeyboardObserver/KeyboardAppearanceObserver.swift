@@ -2,6 +2,7 @@
 import Foundation
 import CoreGraphics
 
+@available(iOS 9.0, *)
 public class KeyboardAppearanceObserver {
     // MARK: Private variables
     private let keyboardObserver = KeyboardObserver()
@@ -16,6 +17,7 @@ public class KeyboardAppearanceObserver {
     }
 }
 
+@available(iOS 9.0, *)
 extension KeyboardAppearanceObserver: KeyboardObserverDelegate {
     // MARK: KeyboardObserverDelegate
     public func keyboardWillShow(_ sender: KeyboardObserver, userInfo: KeyboardObserver.UserInfo) {

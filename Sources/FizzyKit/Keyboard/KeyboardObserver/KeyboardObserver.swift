@@ -1,6 +1,7 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 public protocol KeyboardObserverDelegate: class {
     func keyboardWillShow(_ sender: KeyboardObserver, userInfo: KeyboardObserver.UserInfo)
     func keyboardDidShow(_ sender: KeyboardObserver, userInfo: KeyboardObserver.UserInfo)
@@ -10,6 +11,7 @@ public protocol KeyboardObserverDelegate: class {
     func keyboardDidHide(_ sender: KeyboardObserver, userInfo: KeyboardObserver.UserInfo)
 }
 
+@available(iOS 9.0, *)
 public extension KeyboardObserverDelegate {
     func keyboardWillShow(_ sender: KeyboardObserver, userInfo: KeyboardObserver.UserInfo) {}
     func keyboardDidShow(_ sender: KeyboardObserver, userInfo: KeyboardObserver.UserInfo) {}
@@ -20,6 +22,7 @@ public extension KeyboardObserverDelegate {
 }
 
 /// Class to observe keyboard appearance/disappearance. Create instance and set observe closure to 'keyboardFrameWillChange' to start observing.
+@available(iOS 9.0, *)
 public class KeyboardObserver: NSObject {
     //MARK: Public variables
     public var delegate: KeyboardObserverDelegate?
@@ -45,6 +48,7 @@ public class KeyboardObserver: NSObject {
     }
 }
 
+@available(iOS 9.0, *)
 public extension KeyboardObserver {
     //MARK: Notifications handlers
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -73,6 +77,7 @@ public extension KeyboardObserver {
     }
 }
 
+@available(iOS 9.0, *)
 public extension KeyboardObserver {
     //MARK: UserInfo structure
     /// Helpful userInfo structure to store keyboard size and animantion duration.

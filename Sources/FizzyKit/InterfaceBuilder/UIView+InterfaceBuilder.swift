@@ -1,6 +1,7 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 public extension UIView {
     func loadFromNib(_ nibName: String? = nil) {
         let nibName = nibName ?? String(describing: Self.self)

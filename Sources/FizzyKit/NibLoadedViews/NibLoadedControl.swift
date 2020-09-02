@@ -1,6 +1,7 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 open class NibLoadedControl: UIControl {
     // MARK: Public variables
     open var nibName: String { return String(describing: Self.self) }
