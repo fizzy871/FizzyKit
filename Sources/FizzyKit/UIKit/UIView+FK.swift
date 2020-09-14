@@ -49,4 +49,8 @@ public extension UIView {
         }
         get { return self.isHidden }
     }
+    func fadeAndHideInStackView(_ hide: Bool) {
+        self.isHiddenInStackView = hide
+        self.alpha = hide ? 0.0 : 1.0
+    }
 }
