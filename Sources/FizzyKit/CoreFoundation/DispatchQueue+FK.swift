@@ -20,4 +20,15 @@ public extension DispatchQueue {
             }
         }
     }
+    static func onMainSync<R>(_ closure: @escaping () -> (R)) -> R {
+        if Thread.current.isMainThread {
+            return closure()
+        } else {
+            var result: R!
+            DispatchQueue.main.sync {
+                result = closure()
+            }
+            return result
+        }
+    }
 }
